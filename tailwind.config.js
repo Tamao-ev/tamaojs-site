@@ -10,6 +10,10 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      heading: ["Play", "sans-serif"],
+      paragraph: ["Quicksand", "sans-serif"],
+    },
   },
   plugins: [],
 };
