@@ -12,7 +12,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={`font-heading`}>
+      <main className={``}>
         <h1 className="text-3xl font-bold underline">Hello world!</h1>
         <p className={`font-paragraph`}>Mon premier paragraphe</p>
       </main>

@@ -10,7 +10,7 @@ const NavigationBar = ({}): JSX.Element => {
     <>
       <BurgerToggle toggle={toggle} setToggle={setToggle} />
       <div
-        className={`absolute flex lg:hidden  flex-col justify-center items-center w-full gap-36 h-screen  top-0 bottom-0  bg-white transition-all duration-700 ease-in-out ${
+        className={`absolute flex lg:hidden  flex-col justify-center items-center w-full gap-36 h-screen  top-0 bottom-0  bg-white dark:bg-black dark:text-white transition-all duration-700 ease-in-out ${
           toggle ? "translate-x-0 right-0 left-0" : "-translate-x-[1000px]"
         }`}
       >
@@ -20,7 +20,9 @@ const NavigationBar = ({}): JSX.Element => {
           </Link>
         ))}
       </div>
-      <div className={`hidden lg:flex items-center justify-center gap-36 my-8`}>
+      <div
+        className={`hidden lg:flex items-center justify-center gap-36 my-8 uppercase`}
+      >
         {NavigationItems.map((item, index) => (
           <Link href={`#${item.label}`} key={index}>
             {item.label}

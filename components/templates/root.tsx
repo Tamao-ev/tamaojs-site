@@ -7,7 +7,7 @@ interface TJSPageProps {
 
 const TJSPage = ({ children }: TJSPageProps): JSX.Element => {
   return (
-    <div className="mx-12">
+    <div className="mx-12 font-heading">
       <NavigationBar />
       {children}
     </div>

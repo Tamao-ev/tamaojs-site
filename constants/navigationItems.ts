@@ -1,18 +1,18 @@
 export const NavigationItems = [
   {
-    label: "about",
+    label: "ABOUT",
     isChecked: true,
   },
   {
-    label: "blog",
+    label: "BLOG",
     isChecked: false,
   },
   {
-    label: "techno",
+    label: "TECHNO",
     isChecked: false,
   },
   {
-    label: "teach",
+    label: "TEACHING",
     isChecked: false,
   },
 ];
