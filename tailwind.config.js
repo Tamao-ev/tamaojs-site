@@ -15,5 +15,8 @@ module.exports = {
       paragraph: ["Quicksand", "sans-serif"],
     },
   },
+  future: {
+    hoverOnlyWhenSupported: true,
+  },
   plugins: [],
 };
