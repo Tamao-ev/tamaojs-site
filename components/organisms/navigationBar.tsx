@@ -21,7 +21,7 @@ const NavigationBar = ({}): JSX.Element => {
         ))}
       </div>
       <aside
-        className={`hidden lg:w-1/4 lg:flex lg:flex-col items-center justify-center gap-36 my-8 uppercase`}
+        className={`hidden w-1/4 lg:flex flex-col items-center justify-center gap-12 uppercase`}
       >
         {NavigationItems.map((item, index) => (
           <Link href={`#${item.label}`} key={index}>

@@ -7,7 +7,7 @@ interface TJSPageProps {
 
 const TJSPage = ({ children }: TJSPageProps): JSX.Element => {
   return (
-    <div className="mx-12 lg:flex h-screen font-heading text-black dark:text-white">
+    <div className="mx-12 lg:flex h-auto font-heading text-black dark:text-white">
       <NavigationBar />
       {children}
     </div>

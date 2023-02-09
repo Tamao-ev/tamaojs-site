@@ -1,4 +1,5 @@
 import Header from "@/components/organisms/header";
+import About from "@/components/templates/about";
 import Head from "next/head";
 
 export default function Home() {
@@ -10,8 +11,9 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={`my-32`}>
+      <main className={`my-8 lg:my-32`}>
         <Header />
+        <About />
       </main>
     </>
   );
