@@ -18,12 +18,12 @@ const BurgerToggle = ({
         <span
           className={`${
             toggle ? `w-3` : `w-9`
-          }  h-1 bg-black dark:bg-white rounded-[1px] transition-all duration-700 ease-in-out`}
+          }  h-[3px] bg-black dark:bg-white rounded-[1px] transition-all duration-700 ease-in-out`}
         ></span>
         <span
           className={`${
             toggle ? `w-9` : `w-3`
-          } h-1 bg-black dark:bg-white rounded-[1px] transition-all duration-700 ease-in-out`}
+          } h-[3px] bg-black dark:bg-white rounded-[1px] transition-all duration-700 ease-in-out`}
         ></span>
       </div>
     </div>

@@ -1,7 +1,5 @@
+import Header from "@/components/organisms/header";
 import Head from "next/head";
-import { Inter } from "@next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
@@ -12,9 +10,8 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={``}>
-        <h1 className="text-3xl font-bold underline">Hello world!</h1>
-        <p className={`font-paragraph`}>Mon premier paragraphe</p>
+      <main className={`my-32`}>
+        <Header />
       </main>
     </>
   );

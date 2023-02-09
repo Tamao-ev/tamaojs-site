@@ -20,15 +20,15 @@ const NavigationBar = ({}): JSX.Element => {
           </Link>
         ))}
       </div>
-      <div
-        className={`hidden lg:flex items-center justify-center gap-36 my-8 uppercase`}
+      <aside
+        className={`hidden lg:w-1/4 lg:flex lg:flex-col items-center justify-center gap-36 my-8 uppercase`}
       >
         {NavigationItems.map((item, index) => (
           <Link href={`#${item.label}`} key={index}>
             {item.label}
           </Link>
         ))}
-      </div>
+      </aside>
     </>
   );
 };
