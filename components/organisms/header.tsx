@@ -3,6 +3,7 @@ import Image from "next/image";
 import profilPicture from "../../public/images/profilPicture.jpg";
 import { TechnoItems } from "@/constants/technoItems";
 import Tag from "@/components/atoms/tag";
+import Emoji from "../atoms/Emoji";
 
 const Header = ({}): JSX.Element => {
   return (
@@ -20,7 +21,10 @@ const Header = ({}): JSX.Element => {
       >
         <h2>React fullstack developer,</h2>
         <p className={`text-lg font-semibold`}>
-          Learn , Practice, Master ... Reapeat <span>🔁</span>
+          Learn , Practice, Master ... Reapeat{" "}
+          <span>
+            <Emoji symbol="🔁" />
+          </span>
         </p>
         <div className={`flex flex-col lg:flex-row gap-x-10`}>
           <Image

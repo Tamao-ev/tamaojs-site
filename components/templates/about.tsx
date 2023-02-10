@@ -1,12 +1,17 @@
 import React from "react";
+import Emoji from "../atoms/Emoji";
 import SocialLink from "../atoms/socialLink";
 
 const TSAbout = ({}): JSX.Element => {
   return (
     <section>
       <p className={`font-paragraph text-sm my-8 lg:max-w-lg lg:text-base`}>
-        Hi ! <span>👋</span> I am Maxime Morfin, a talented fullstack developer
-        with 5 years of experience in the industry. I am a self-taught expert in{" "}
+        Hi !{" "}
+        <span>
+          <Emoji symbol="👋" />
+        </span>{" "}
+        I am Maxime Morfin, a talented fullstack developer with 5 years of
+        experience in the industry. I am a self-taught expert in{" "}
         <span className={`font-semibold`}>React</span> and{" "}
         <span className={`font-semibold`}>Next.js</span> and have a passion for
         sharing my knowledge with others. My goal is to educate and inspire
