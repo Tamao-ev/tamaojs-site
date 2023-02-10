@@ -28,7 +28,7 @@ const NavigationBar = ({}): JSX.Element => {
                   {/* Desktop version, hidden on mobile, animates y axis */}
                   <div className="hidden lg:block relative ">
                     <motion.div
-                      className="absolute bg-neutral-900 dark:bg-neutral-100 dark:bg-opacity-30 h-[14px] top-[15px] rounded-sm z-[-1]"
+                      className="absolute bg-neutral-900 dark:bg-neutral-100 bg-opacity-30 h-[14px] top-[15px] rounded-sm z-[-1]"
                       layoutId="test2"
                       initial={{ opacity: 0, y: NavigationItems[pathname].y }}
                       animate={{
@@ -46,7 +46,7 @@ const NavigationBar = ({}): JSX.Element => {
                   {/* Mobile version, hidden on desktop, animates x axis */}
                   <div className="block lg:hidden">
                     <motion.div
-                      className="absolute bg-neutral-900 dark:bg-neutral-100 dark:bg-opacity-30 h-[14px] top-1/2 rounded-sm z-[-1]"
+                      className="absolute bg-neutral-900 dark:bg-neutral-100 bg-opacity-30 dark:bg-opacity-30 h-[14px] top-1/2 rounded-sm z-[-1]"
                       layoutId="test"
                       initial={{ opacity: 0, x: NavigationItems[pathname].x }}
                       animate={{
@@ -75,7 +75,7 @@ const NavigationBar = ({}): JSX.Element => {
                       "transition-all hover:text-neutral-800 dark:hover:text-neutral-200 py-[5px] px-[10px]",
                       {
                         "text-neutral-500": !isActive,
-                        "font-medium": isActive,
+                        "font-semibold": isActive,
                       }
                     )}
                   >
