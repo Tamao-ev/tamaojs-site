@@ -15,12 +15,12 @@ export const NavigationItems = {
     label: "Techno",
     x: 120,
     y: 69,
-    w: "65px",
+    w: "47px",
   },
   "/teaching": {
     label: "Teaching",
     x: 185,
     y: 104,
-    w: "100px",
+    w: "75px",
   },
 };

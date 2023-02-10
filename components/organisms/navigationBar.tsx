@@ -12,7 +12,7 @@ const NavigationBar = ({}): JSX.Element => {
     <>
       {/* <BurgerToggle toggle={toggle} setToggle={setToggle} /> */}
       <aside
-        className={`lg:h-screen overflow-hidden lg:w-1/4 lg:flex lg:flex-col lg:justify-center lg:items-center `}
+        className={`lg:h-screen overflow-hidden lg:w-1/4 lg:flex lg:flex-col lg:justify-center lg:items-center font-paragraph`}
       >
         <div
           className={`my-10 flex lg:flex-col justify-start lg:justify-center items-center gap-7`}
@@ -44,7 +44,7 @@ const NavigationBar = ({}): JSX.Element => {
                     />
                   </div>
                   {/* Mobile version, hidden on desktop, animates x axis */}
-                  <div className="block md:hidden">
+                  <div className="block lg:hidden">
                     <motion.div
                       className="absolute bg-neutral-900 dark:bg-neutral-100 dark:bg-opacity-30 h-[14px] top-1/2 rounded-sm z-[-1]"
                       layoutId="test"
@@ -75,7 +75,7 @@ const NavigationBar = ({}): JSX.Element => {
                       "transition-all hover:text-neutral-800 dark:hover:text-neutral-200 py-[5px] px-[10px]",
                       {
                         "text-neutral-500": !isActive,
-                        "font-bold": isActive,
+                        "font-medium": isActive,
                       }
                     )}
                   >
