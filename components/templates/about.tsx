@@ -5,7 +5,9 @@ import SocialLink from "../atoms/socialLink";
 const TSAbout = ({}): JSX.Element => {
   return (
     <section>
-      <p className={`font-paragraph text-sm my-8 lg:max-w-lg lg:text-base`}>
+      <p
+        className={`font-paragraph text-sm my-8 md:max-w-lg md:text-lg lg:text-lg`}
+      >
         Hi !{" "}
         <span>
           <Emoji symbol="👋" />
